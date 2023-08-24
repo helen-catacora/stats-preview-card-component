@@ -1,4 +1,4 @@
-:root{
+:root {
     /*### Primary*/
 
     --Very-dark-blue: hsl(233, 47%, 7%); /*(main background)*/
@@ -8,12 +8,103 @@
     /*### Neutral*/
 
     --White: hsl(0, 0%, 100%); /*(main heading, stats)*/
-    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
-    --Slightly-transparent-white : hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
+    --main-paragraph: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
+    --stat-headings: hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
 
     /*## Typography
 
     ### Body Copy*/
 
     --Font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue);
+}
+
+#card{
+    background-color: var(--Dark-desaturated-blue);
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    width: auto;
+    height: 240px;
+    background-color: var(--Soft-violet);
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    margin: 18px;
+    color: var(--White);
+}
+
+.title span{
+    color: var(--Soft-violet);
+}
+
+.description p{
+    text-align: center;
+    font-size: 15px;
+    margin: 30px;
+    line-height: 25px;
+    color: var(--main-paragraph);
+    opacity: 0.5;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.stat>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.stat>div span:nth-child(1){
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: var(--White);
+    font-weight: 700;
+}
+
+.stat>div span:nth-child(2){
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--stat-headings);
+    margin: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
 }
