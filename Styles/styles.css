@@ -37,10 +37,11 @@ body{
 
 #card{
     background-color: var(--Dark-desaturated-blue);
-    width: 90%;
+    width: 335px; /*335px 0 90%*/
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .image{
@@ -56,10 +57,11 @@ body{
 
 
 .title{
-    text-align: center;
     font-size: 25px;
     margin: 18px;
     color: var(--White);
+    margin-top: 40px;
+    margin-bottom: -10px;
 }
 
 .title span{
@@ -67,12 +69,11 @@ body{
 }
 
 .description p{
-    text-align: center;
     font-size: 15px;
-    margin: 30px;
+    margin: 28px;
     line-height: 25px;
     color: var(--main-paragraph);
-    opacity: 0.5;
+    /*opacity: 0.9;*/
 }
 
 .stat{
@@ -80,7 +81,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
     margin-bottom: 20px;
 }
 
@@ -102,9 +102,8 @@ body{
 .stat>div span:nth-child(2){
     font-family: 'Lexend Deca', sans-serif;
     color: var(--stat-headings);
-    margin: 5px;
+    margin-top: 5px;
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 0.1em;
-    opacity: 0.5;
 }
