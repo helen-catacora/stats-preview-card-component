@@ -37,7 +37,7 @@ body{
 
 #card{
     background-color: var(--Dark-desaturated-blue);
-    width: 335px; /*335px 0 90%*/
+    width: 320px; /*335px 0 90%*/
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -58,9 +58,9 @@ body{
 
 .title{
     font-size: 25px;
-    margin: 18px;
+    margin: 17px;
     color: var(--White);
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: -10px;
 }
 

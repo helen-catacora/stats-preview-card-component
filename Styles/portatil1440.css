@@ -14,15 +14,16 @@
 
 .title{
     text-align: left;
-    font-size: 2em;
+    font-size: 36px;
     color: var(--White);
     margin: 60px 60px 0 60px;
 }
 
 .description p{
     text-align: left;
-    font-size: 1em;
+    font-size: 16px;
     margin: 40px 100px 0 60px;
+    line-height: 1.6em;
 }
 
 .stat {
@@ -37,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin:10px 70px 30px 0px;
-    font-size: 1em;
+    margin:10px 80px 30px 0px;
+    font-size: 16px;
 
 }
